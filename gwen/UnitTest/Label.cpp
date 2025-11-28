@@ -64,10 +64,10 @@ class Label : public GUnit
 				// Note that when using a custom font, this font object has to stick around
 				// for the lifetime of the label. Rethink, or is that ideal?
 				//
-				m_Font.facename = L"Comic Sans MS";
+				m_Font.facename = L"hydrogen.ttf"; //"customfont.ttf" have to copy to bin folder;
 				m_Font.size = 25;
 				Gwen::Controls::Label* label = new Gwen::Controls::Label( this );
-				label->SetText( L"Custom Font (Comic Sans 25)" );
+				label->SetText( L"Custom Font (HydrogenWhiskey 25)" );
 				label->SetFont( &m_Font );
 				label->SizeToContents();
 				label->SetPos( 10, 170 );
