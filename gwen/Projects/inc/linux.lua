@@ -1,7 +1,7 @@
 
 
-ALLEGRO_LIBS	= { "UnitTest", "Renderer-Allegro", "GWEN-Static", "alleg" }
-ALLEGRO_LIBS_D	= { "UnitTest", "Renderer-Allegro", "GWEN-Static", "alleg" }
+ALLEGRO_LIBS	= { "UnitTest", "Renderer-Allegro", "GWEN-Static", "allegro", "allegro_image", "allegro_font", "allegro_primitives", "allegro_ttf" }
+ALLEGRO_LIBS_D	= { "UnitTest", "Renderer-Allegro", "GWEN-Static", "allegro", "allegro_image", "allegro_font", "allegro_primitives", "allegro_ttf" }
 
 SFML_LIBS		= { "UnitTest", "Renderer-SFML", "GWEN-Static", "sfml-graphics", "sfml-window", "sfml-system", "GL" }
 SFML_LIBS_D		= { "UnitTest", "Renderer-SFML", "GWEN-Static", "sfml-graphics", "sfml-window", "sfml-system", "GL" }
