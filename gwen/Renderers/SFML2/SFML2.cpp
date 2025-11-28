@@ -226,7 +226,8 @@ Gwen::Point Gwen::Renderer::SFML2::MeasureText( Gwen::Font* pFont, const Gwen::U
         sfStr.setString( text );
         sfStr.setFont( *pSFFont );
         sfStr.setCharacterSize( pFont->realsize );
-        return Gwen::Point( sfStr.getLocalBounds().width, pSFFont->getLineSpacing( pFont->realsize ) );
+		// on this demo almost good, tried different font/sizes only last pixel sometimes missing on Mageia Linux 9. (??round/ceil problem?? not inspected, just added +1)
+        return Gwen::Point( sfStr.getLocalBounds().width+1, pSFFont->getLineSpacing( pFont->realsize ) );
     }
 
     return Gwen::Point();
