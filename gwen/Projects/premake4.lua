@@ -71,8 +71,8 @@ DefineRenderer( "SFML2",
                 { "../Renderers/SFML2/SFML2.cpp" },
                 SFML2_DEFINES )
 
---DefineRenderer( "Allegro",
---                { "../Renderers/Allegro/Allegro.cpp" } )
+DefineRenderer( "Allegro",
+                { "../Renderers/Allegro/Allegro.cpp" } )
 
 if ( os.get() == "windows" ) then
 	DefineRenderer( "DirectX9",
@@ -108,9 +108,9 @@ DefineSample( "SFML2",
               { "../Samples/SFML2/SFML2.cpp" },
               SFML2_LIBS, SFML2_LIBS_D, SFML2_DEFINES )
 
---DefineSample( "Allegro",
---              { "../Samples/Allegro/AllegroSample.cpp" },
---              ALLEGRO_LIBS, ALLEGRO_LIBS_D )
+DefineSample( "Allegro",
+              { "../Samples/Allegro/AllegroSample.cpp" },
+              ALLEGRO_LIBS, ALLEGRO_LIBS_D )
 
 if ( os.get() == "windows" ) then
 
