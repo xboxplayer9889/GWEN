@@ -74,7 +74,9 @@ namespace Gwen
 
 			int bx, by, tw, th;
 			al_get_text_dimensions( afont, Utility::UnicodeToString( text ).c_str(), &bx, &by, &tw, &th );
-			return Gwen::Point( tw, th );
+			// textlines calculeted false, maybe it is not the perfect solution, but in this example works well, i think.
+			// int made double error from rounding up??ceil, so i added 1+1=2
+			return Gwen::Point( tw+bx+2, th+by+2 );
 		}
 
 		void Allegro::StartClip()
