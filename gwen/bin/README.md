@@ -2,5 +2,5 @@
 
 
 - have to copy customfont.ttf (currently hydrogen.ttf)
-- have to create missingfile.png
+- have to create missingfile png called missingimage.png
 
