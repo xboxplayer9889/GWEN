@@ -40,7 +40,7 @@ class TextBox : public GUnit
 				label->SetPos( 10, 10 + 25 * 4 );
 			}
 			{
-				m_Font.facename = L"Impact";
+				m_Font.facename = L"hydrogen.ttf"; // "customfont.ttf"
 				m_Font.size = 50;
 				Gwen::Controls::TextBox* label = new Gwen::Controls::TextBox( this );
 				label->SetText( L"Different Font" );
