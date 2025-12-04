@@ -1,0 +1,16 @@
+10a11,12
+> #include "myGL.h"
+> 
+21a24,29
+>         glewExperimental = GL_TRUE;
+>         glewInit();
+> 	
+> 	myGL* mySomething = new myGL();
+> 	mySomething->Create();
+> 
+45c53
+< 	pCanvas->SetBackgroundColor( Gwen::Color( 150, 170, 170, 255 ) );
+---
+> 	pCanvas->SetBackgroundColor( Gwen::Color( 150, 170, 170, 0 ) );
+82a91
+> 		mySomething->Draw();
