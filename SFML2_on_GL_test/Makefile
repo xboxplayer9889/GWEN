@@ -22,7 +22,7 @@ init:
 	@./Build.sh
 	cd ../../SFML2_on_GL_test
 	cp ../gwen/Samples/SFML2/SFML2.cpp ./SFML2_on_GL.cpp
-	patch SFML2_on_GL.cpp <patch.txt
+	patch -R SFML2_on_GL.cpp <patch.txt
 	cp ../gwen/lib/linux/gmake/libgwen.so .
 	cp ../gwen/bin/DefaultSkin.png .
 	cp ../gwen/bin/OpenSans.ttf .

@@ -47,11 +47,13 @@ void myGL::Create(){
     glAttachShader(sprog,vert_sh);
     glAttachShader(sprog,frag_sh);
     glLinkProgram(sprog);
-    
+}
+
+void myGL::Draw(){
     //genbuffers
         //gen vertexes
         //gen indexes
-    
+
     //setup attribs
         //setup vertex attrib
     /*
@@ -64,8 +66,7 @@ void myGL::Create(){
 
     //use program
     glUseProgram(sprog);
-}
-void myGL::Draw(){
+
     //glclear
     glClearColor(1.0f,0.2f,0.2f,1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
